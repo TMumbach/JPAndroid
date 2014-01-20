@@ -119,7 +119,7 @@ public class DatabaseHelper extends SQLiteOpenHelper
 			{
 				continue;
 			}
-			script.append(SQLiteTypes.CREATE_TABLE + table.value());
+			script.append(SQLiteTypes.CREATE_TABLE + (table.value().equals("") ? clazz.getSimpleName() : table.value()));
 
 			Field[] fields = clazz.getDeclaredFields();
 
