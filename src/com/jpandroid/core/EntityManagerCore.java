@@ -453,7 +453,7 @@ public class EntityManagerCore implements EntityManager
 
 	@Override
 	@SuppressWarnings("all")
-	public <T extends Entity> List<T> getListByNamedQuery(Class<T> type, String name, Map<String, Object> parameters) 
+	public <T extends Entity> List<T> selectListByNamedQuery(Class<T> type, String name, Map<String, Object> parameters) 
 	{
 		Query query = ORMUtils.getQueryByNamedQuery(name, type, parameters);
 		
@@ -468,7 +468,7 @@ public class EntityManagerCore implements EntityManager
 
 	@Override
 	@SuppressWarnings("all")
-	public <T extends Entity> T getSingleByNamedQuery(Class<T> type, String name, Map<String, Object> parameters) 
+	public <T extends Entity> T selectSingleByNamedQuery(Class<T> type, String name, Map<String, Object> parameters) 
 	{
 		Query query = ORMUtils.getQueryByNamedQuery(name, type, parameters);
 		
