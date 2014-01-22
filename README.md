@@ -13,9 +13,10 @@ Features:
 * And more..
 
 
-=== How to use ===
+How to use
 
 Entity:
+
 <code>
 import com.jpandroid.annotations.NamedQuery;
 import com.jpandroid.annotations.Primarykey;
@@ -30,6 +31,7 @@ import com.jpandroid.types.GenerationType;
 	@NamedQuery(name = "findCarByName", selection = "name like :name", columns = {"id"}),
 	@NamedQuery(name = "findCarByYear", selection = "year = :year", columns = {"id"}) 
 })
+
 public class Car extends DomainEntity<Integer> {
 	
 	@Primarykey(name = "id", strategy = GenerationType.AUTO_INCREMENT)
@@ -88,6 +90,7 @@ public class Car extends DomainEntity<Integer> {
 </code>
 
 Using:
+
 <code>
 
 import com.jpandroid.core.EntityManager;
@@ -132,6 +135,7 @@ public class MainActivity extends Activity {
 	}
 
 }
+
 </code>
 
 
@@ -181,9 +185,11 @@ public class User extends DomainEntity<Integer>
                 this.city= city;
         }
 }
+
 </code>
 
 <code>
+
 @Table("City")
 public class City extends DomainEntity<Integer>
 {
@@ -219,4 +225,5 @@ public class City extends DomainEntity<Integer>
                 this.name = name;
         }
 }
+
 </code>
