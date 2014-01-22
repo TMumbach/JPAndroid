@@ -72,6 +72,12 @@ public class MainActivity extends Activity {
 		getMenuInflater().inflate(R.menu.main, menu);
 		return true;
 	}
+	public abstract class QueryName {
+		public static final String CAR_FIND_ALL = "findAllCar";
+		public static final String CAR_FIND_BY_NAME = "findCarByName";
+		public static final String CAR_FIND_BY_YEAR = "findCarByYear";
+	}
+
 }
 ```
 
