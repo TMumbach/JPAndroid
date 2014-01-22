@@ -11,6 +11,4 @@ Features:
 * Export database file.
 * Mapping InputText for automatic processing.
 * And more..
-
-
-{{{this is a code}}}
+<code>this is a code</code>
