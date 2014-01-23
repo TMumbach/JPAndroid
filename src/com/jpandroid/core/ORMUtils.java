@@ -491,7 +491,7 @@ public class ORMUtils
 	public static String getTableName(Class<?> entity)
 	{
 		Table table = entity.getAnnotation(Table.class);
-		return table.value();
+		return table.value().equals("") ? entity.getSimpleName() : table.value();
 	}
 	
 	public static String[] getColumns(Class<?> clazz)
