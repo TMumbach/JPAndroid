@@ -463,7 +463,6 @@ public class EntityManagerCore implements EntityManager
 		}
 		
 		return select(type, query);
-	
 	}
 
 	@Override
