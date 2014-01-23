@@ -14,6 +14,9 @@ Features:
 
 =========
 
+[Download lib](https://github.com/TMumbach/JPAndroid/blob/master/libs/jpandroid.jar?raw=true)
+
+
 How to use!
 
 ```
