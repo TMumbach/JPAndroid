@@ -17,6 +17,15 @@ public class DatabaseManager
 	public static boolean showLog = false;
 
 	/**
+	 * Don't forget Manifest.xml: 
+	 * 
+	 * <code>  
+	 * 	<ul>
+	 * 		<li>android:name="db_version" android:value="1"</li>
+     * 		<li>android:name="db_name" android:value="your_database.db"</li>
+     * 	</ul>
+	 * </code>
+	 * 
 	 * @param context your application context
 	 * @param array with all entities
 	 */
@@ -27,6 +36,16 @@ public class DatabaseManager
 	
 	/**
 	 * Auto scan tables or data base will be created in SDcard (Don't forget that you need to update the permissions for your Manifest file)
+	 * </br>
+	 * </br>
+	 * Don't forget Manifest.xml: 
+	 * <code>  
+	 * 	<ul>
+	 * 		<li>android:name="db_version" android:value="1"</li>
+     * 		<li>android:name="db_name" android:value="your_database.db"</li>
+     * 		<li>android:name="db_path" android:value="/MyApp/"</li> 
+     * 	</ul>
+	 * </code>
 	 * 
 	 * @param context
 	 * @param dataBasePath
