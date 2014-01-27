@@ -18,9 +18,9 @@ import android.database.sqlite.SQLiteDatabase;
 import com.jpandroid.annotations.Column;
 import com.jpandroid.annotations.FieldsToLoad;
 import com.jpandroid.annotations.ForeignKey;
+import com.jpandroid.annotations.NamedQueries;
 import com.jpandroid.annotations.NamedQuery;
 import com.jpandroid.annotations.Primarykey;
-import com.jpandroid.annotations.Queries;
 import com.jpandroid.annotations.Table;
 import com.jpandroid.annotations.Transient;
 import com.jpandroid.criteria.Query;
@@ -537,7 +537,7 @@ public class ORMUtils
 	
 	public static Query getQueryByNamedQuery(String name, Class<?> type,  Map<String, Object> parameters)
 	{
-		NamedQuery[] namedQueries = type.getAnnotation(Queries.class).value();
+		NamedQuery[] namedQueries = type.getAnnotation(NamedQueries.class).value();
 		
 		for (NamedQuery namedQuery : namedQueries) 
 		{
