@@ -92,7 +92,7 @@ Create the entities
 import com.jpandroid.annotations.ForeignKey;
 import com.jpandroid.annotations.NamedQuery;
 import com.jpandroid.annotations.Primarykey;
-import com.jpandroid.annotations.Queries;
+import com.jpandroid.annotations.NamedQueries;
 import com.jpandroid.annotations.Table;
 import com.jpandroid.entity.DomainEntity;
 import com.jpandroid.types.GenerationType;
