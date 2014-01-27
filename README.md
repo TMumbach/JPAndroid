@@ -99,7 +99,7 @@ import com.jpandroid.types.GenerationType;
 import com.jpandroid.types.LoadType;
 
 @Table("Car")
-@Queries({ 
+@NamedQueries({ 
 	@NamedQuery(name = "findAllCar"),
 	@NamedQuery(name = "findCarByName", selection = "name like :name", columns = {"id"}),
 	@NamedQuery(name = "findCarByYear", selection = "year = :year") 
