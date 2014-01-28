@@ -19,6 +19,13 @@ Features:
 
 How to use!
 
+Manifest.xml
+
+```
+<meta-data android:name="db_version" android:value="1" />
+<meta-data android:name="db_name" android:value="my_database.db" />
+```
+
 ```
 import java.util.List;
 
@@ -92,14 +99,14 @@ Create the entities
 import com.jpandroid.annotations.ForeignKey;
 import com.jpandroid.annotations.NamedQuery;
 import com.jpandroid.annotations.Primarykey;
-import com.jpandroid.annotations.Queries;
+import com.jpandroid.annotations.NamedQueries;
 import com.jpandroid.annotations.Table;
 import com.jpandroid.entity.DomainEntity;
 import com.jpandroid.types.GenerationType;
 import com.jpandroid.types.LoadType;
 
 @Table("Car")
-@Queries({ 
+@NamedQueries({ 
 	@NamedQuery(name = "findAllCar"),
 	@NamedQuery(name = "findCarByName", selection = "name like :name", columns = {"id"}),
 	@NamedQuery(name = "findCarByYear", selection = "year = :year") 
