@@ -19,6 +19,13 @@ Features:
 
 How to use!
 
+Manifest.xml
+
+```
+<meta-data android:name="db_version" android:value="1" />
+<meta-data android:name="db_name" android:value="my_database.db" />
+```
+
 ```
 import java.util.List;
 
