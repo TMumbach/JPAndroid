@@ -232,19 +232,19 @@ public class ORMUtils
 				}
 				else if ((fieldType.equals(Double.class)) || (fieldType.equals(Double.TYPE)))
 				{
-					field.set(model, Double.valueOf(cursor.getDouble(columnIndex)));
+					field.set(model, cursor.getString(columnIndex) == null ? null : Double.valueOf(cursor.getDouble(columnIndex)));
 				}
 				else if ((fieldType.equals(Float.class)) || (fieldType.equals(Float.TYPE)))
 				{
-					field.set(model, Float.valueOf(cursor.getFloat(columnIndex)));
+					field.set(model, cursor.getString(columnIndex) == null ? null : Float.valueOf(cursor.getFloat(columnIndex)));
 				}
 				else if ((fieldType.equals(Integer.class)) || (fieldType.equals(Integer.TYPE)))
 				{
-					field.set(model, Integer.valueOf(cursor.getInt(columnIndex)));
+					field.set(model, cursor.getString(columnIndex) == null ? null : Integer.valueOf(cursor.getInt(columnIndex)));
 				}
 				else if ((fieldType.equals(Long.class)) || (fieldType.equals(Long.TYPE)))
 				{
-					field.set(model, Long.valueOf(cursor.getLong(columnIndex)));
+					field.set(model, cursor.getString(columnIndex) == null ? null : Long.valueOf(cursor.getLong(columnIndex)));
 				}
 				else if (fieldType.equals(String.class))
 				{
